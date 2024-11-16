@@ -1,6 +1,6 @@
 {
   "name": "md-color-english",
-  "displayName": "md-color",
+  "displayName": "md-color-english",
   "description": "translation of md-color (https://github.com/KuKuDeCheng/md-color) .When writing with MarkDown, you can use `<font color=red>content</font>` to add color to the text. md-color is the lazy tool for this operation",
   "publisher": "venttis",
   "repository": "https://github.com/venttis-1/md-color",
