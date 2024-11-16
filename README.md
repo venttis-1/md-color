@@ -1,23 +1,18 @@
-# md-color 
+# md-color
 
-使用MarkDown写作时，可以使用`<font color=red>内容</font>`给文本添加颜色。md-color就是针对此操作的偷懒工具。
+When writing in Markdown, you can use `<font color=red>content</font>` to add color to text. **md-color** is a tool designed to simplify this process.
 
-## 使用方法
+## Usage
 
-在Markdown文件中选中一段文本内容，使用快捷键`ctrl+1`或者`cmd+1`，md-color会随机颜色为这段文本添加`<font color>`属性。或者右键在菜单`md-color`中指定颜色属性。
+1. Select a piece of text in your Markdown file.
+2. Use the shortcut `ctrl+1` (Windows/Linux) or `cmd+1` (Mac).
+3. **md-color** will randomly assign a color to the selected text using the `<font color>` attribute.  
+   Alternatively, you can right-click and choose a specific color from the **md-color** menu.
 
-经过测试，选中了展示效果较好的颜色作为随机颜色：
+## GitHub Repository
 
-![](https://kukudecheng.github.io/md-color/img/color.png)
+[https://github.com/venttis-1/md-color](https://github.com/venttis-1/md-color)
 
-## 效果图
+## GitHub Repository Original
 
-![](https://kukudecheng.github.io/md-color/img/效果.png)
-
-## Git地址
-
-https://github.com/KuKuDeCheng/md-color
-
-## 联系方式
-
-![](https://kukudecheng.github.io/md-color/img/wechat.jpg)
+[https://github.com/KuKuDeCheng/md-color](https://github.com/KuKuDeCheng/md-color)
