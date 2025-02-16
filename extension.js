@@ -82,6 +82,9 @@ function activate(context) {
 	context.subscriptions.push(vscode.commands.registerCommand('extension.md-color-seagreen', function () {
 		setColor(vscode.window.activeTextEditor, 'seagreen');
 	}));
+	context.subscriptions.push(vscode.commands.registerCommand('extension.md-color-bold', function () {
+		setTip(vscode.window.activeTextEditor, 'bold');
+	}));
 
 	context.subscriptions.push(vscode.commands.registerCommand('extension.vuepress-tip', function () {
 		setTip(vscode.window.activeTextEditor, 'tip');
@@ -91,9 +94,6 @@ function activate(context) {
 	}));
 	context.subscriptions.push(vscode.commands.registerCommand('extension.vuepress-danger', function () {
 		setTip(vscode.window.activeTextEditor, 'danger');
-	}));
-	context.subscriptions.push(vscode.commands.registerCommand('extension.vuepress-danger', function () {
-		setTip(vscode.window.activeTextEditor, 'bold');
 	}));
 }
 
