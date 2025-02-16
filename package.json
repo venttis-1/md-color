@@ -5,7 +5,7 @@
   "publisher": "venttis",
   "repository": "https://github.com/venttis-1/md-color",
   "icon": "img/logo.png",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.53.0"
   },

@@ -92,12 +92,22 @@ function activate(context) {
 	context.subscriptions.push(vscode.commands.registerCommand('extension.vuepress-danger', function () {
 		setTip(vscode.window.activeTextEditor, 'danger');
 	}));
+	context.subscriptions.push(vscode.commands.registerCommand('extension.vuepress-danger', function () {
+		setTip(vscode.window.activeTextEditor, 'bold');
+	}));
 }
 
 function setColor(editor, color) {
 	let document = editor.document;
 	let selection = editor.selection;
 	let text = document.getText(selection);
+	if (color ===  'bold') {
+		let result = '<b>' + text + '</b>';
+		editor.edit(editBuilder => {
+			editBuilder.replace(selection, result);
+		})
+		return;
+	}
 	let result = '<font color=' + color + '>' + text + '</font>';
 	editor.edit(editBuilder => {
 		editBuilder.replace(selection, result);
