@@ -101,13 +101,6 @@ function setColor(editor, color) {
 	let document = editor.document;
 	let selection = editor.selection;
 	let text = document.getText(selection);
-	if (color ===  'bold') {
-		let result = '<b>' + text + '</b>';
-		editor.edit(editBuilder => {
-			editBuilder.replace(selection, result);
-		})
-		return;
-	}
 	let result = '<font color=' + color + '>' + text + '</font>';
 	editor.edit(editBuilder => {
 		editBuilder.replace(selection, result);
@@ -117,6 +110,15 @@ function setColor(editor, color) {
 function setTip(editor, tip) {
 	let document = editor.document;
 	let selection = editor.selection;
+
+	if(tip === 'bold'){
+		let text = document.getText(selection);
+		let result = '<b>' + text + '</b>';
+		editor.edit(editBuilder => {
+			editBuilder.replace(selection, result);
+		})
+		return;
+	}
 	let text = document.getText(selection);
 	let result = ':::' + tip + '\n' + text + '\n:::';
 	editor.edit(editBuilder => {
