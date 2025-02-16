@@ -5,7 +5,7 @@
   "publisher": "venttis",
   "repository": "https://github.com/venttis-1/md-color",
   "icon": "img/logo.png",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "engines": {
     "vscode": "^1.53.0"
   },
@@ -78,6 +78,10 @@
       {
         "command": "extension.md-color-tomato",
         "title": "tomato"
+      },
+      {
+        "command": "extension.md-color-bold",
+        "title": "bold"
       }
     ],
     "keybindings": [
@@ -175,6 +179,11 @@
           "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
           "command": "extension.md-color-tomato",
           "group": "navigation@14"
+        },
+        {
+          "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
+          "command": "extension.md-color-bold",
+          "group": "navigation@15"
         }
       ]
     },
